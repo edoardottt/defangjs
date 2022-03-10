@@ -10,7 +10,11 @@ defangjs v1.0.0
 
 const reDot = /\./gm;
 
-//defangUrl >
+/*
+ * Defang a url.
+ * @param  {string} input: The url you want to defang.
+ * @return {string} The input url defanged.
+ */
 exports.defangUrl = function (input) {
     var result = ""
 
@@ -53,7 +57,11 @@ exports.defangUrl = function (input) {
     return result;
 }
 
-//defangIp >
+/*
+ * Defang an Ip address.
+ * @param  {string} input: The ip you want to defang.
+ * @return {string} The input ip defanged.
+ */
 exports.defangIp = function (input) {
     return input.replace(reDot, '[.]')
 }
