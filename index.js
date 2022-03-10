@@ -12,6 +12,8 @@ const reDot = /\./gm;
 
 /*
  * Defang a url.
+ * For security reasons, if the url is not formatted in
+ * a proper way the result is an empty string.
  * @param  {string} input: The url you want to defang.
  * @return {string} The input url defanged.
  */
