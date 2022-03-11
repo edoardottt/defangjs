@@ -28,6 +28,8 @@ console.log(defangjs.defangIp(maliciousIp));
 // --> 666[.]666[.]666[.]666
 ```
 
+Take a look to [test.js](https://github.com/edoardottt/defangjs/blob/main/test.js), this file contains all the supported formats (various protocols, ports, Ipv4 and Ipv6...)
+
 Test 🧑‍🏭
 -------
 
