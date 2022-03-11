@@ -1,6 +1,16 @@
-# defangjs
-URL/IP defanging with Javascript
+<h1 align="center">
+  <b>defangjs</b>
+</h1>
+<p align="center">
+  <b>URL/IP defanging with Javascript</b>
+</p>
+<p align="center">
+  <sub>
+    Coded with 💙 by edoardottt
+  </sub>
+</p>
 
+  
 - [Blocking Email Links: Why we use HXXP in emails](https://privacymatters.ubc.ca/blocking-email-links-why-we-use-hxxp-emails)
 - [Email Security – Defanging URLs](https://www.ibm.com/docs/en/sqsp/32.0?topic=SSBRUQ_32.0.0/com.ibm.resilient.doc/install/resilient_install_defangURLs.htm)
 
@@ -27,6 +37,8 @@ var maliciousIp = '666.666.666.666';
 console.log(defangjs.defangIp(maliciousIp)); 
 // --> 666[.]666[.]666[.]666
 ```
+
+Take a look to [test.js](https://github.com/edoardottt/defangjs/blob/main/test.js), this file contains all the supported formats (various protocols, ports, Ipv4 and Ipv6...)
 
 Test 🧑‍🏭
 -------
