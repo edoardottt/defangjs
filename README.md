@@ -19,11 +19,13 @@ var defangjs = require('defangjs');
 
 var url = 'https://www.edoardoottavianelli.it/index.html';
 
-console.log(defangUrl(url)); // --> hxxps[://]www[.]edoardoottavianelli[.]it/index.html
+console.log(defangjs.defangUrl(url)); 
+// --> hxxps[://]www[.]edoardoottavianelli[.]it/index.html
 
 var maliciousIp = '666.666.666.666';
 
-console.log(defangIp(maliciousIp)); // --> 666[.]666[.]666[.]666
+console.log(defangjs.defangIp(maliciousIp)); 
+// --> 666[.]666[.]666[.]666
 ```
 
 Contribute 🤝
