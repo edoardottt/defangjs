@@ -8,7 +8,7 @@ Install ⬇️
 ------
 
 ```bash
-npm install defangjs
+npm install defangjs@latest
 ```
 
 Usage 🚀
@@ -26,6 +26,13 @@ var maliciousIp = '666.666.666.666';
 
 console.log(defangjs.defangIp(maliciousIp)); 
 // --> 666[.]666[.]666[.]666
+```
+
+Test 🧑‍🏭
+-------
+
+```bash
+npm test
 ```
 
 Contribute 🤝

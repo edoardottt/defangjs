@@ -1,6 +1,6 @@
 /*
 
-defangjs v1.0.1
+defangjs v1.0.2
 
 @Repository: https://github.com/edoardottt/defangjs
 
@@ -147,22 +147,12 @@ function helperNoProtocol(input) {
 
 /*
  * Defang an Ip address.
+ * Support both IPv4 and IPv6.
  * @param  {string} input: The ip you want to defang.
  * @return {string} The input ip defanged.
  */
 exports.defangIp = function (input) {
     var result = "";
-
-    /*
-
-    if :: in ip:
-        surely ipv6 -> replace(::, [::]) and replace (:, [:])
-
-    else:
-        replace(., [.]) and replace(:, [:])
-
-    */
-
     var doubleColonIndex = input.indexOf("::", 0);
 
     if (doubleColonIndex != -1) {
