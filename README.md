@@ -28,6 +28,13 @@ console.log(defangjs.defangIp(maliciousIp));
 // --> 666[.]666[.]666[.]666
 ```
 
+Test 🧑‍🏭
+-------
+
+```bash
+npm test
+```
+
 Contribute 🤝
 -------
 Open an [issue](https://github.com/edoardottt/defangjs/issues).
