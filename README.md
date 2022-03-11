@@ -8,7 +8,7 @@ Install ⬇️
 ------
 
 ```bash
-npm install defangjs
+npm install defangjs@latest
 ```
 
 Usage 🚀
