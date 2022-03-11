@@ -1,6 +1,6 @@
 /*
 
-defangjs v1.0.0
+defangjs v1.0.1
 
 @Repository: https://github.com/edoardottt/defangjs
 
@@ -12,7 +12,12 @@ defangjs v1.0.0
 const reDot = /\./g;
 
 //Regular expression (global) matching a colon.
+//This is useful for the port.
 const reColon = /\:/g;
+
+//Regular expression (global) matching a defanged double colon.
+//This is useful for Ipv6.
+const reDoubleColon = /\:\:/g;
 
 /*
  * Defang a url.
@@ -57,10 +62,10 @@ function helperHttp(input) {
     var result = "hxxp[://]";
     var endDomain = input.indexOf('/', 7);
     if (endDomain != -1) {
-        result += input.substring(7, endDomain).replace(reDot, '[.]');
+        result += input.substring(7, endDomain).replace(reDot, '[.]').replace(reColon, '[:]');
         result += input.substring(endDomain);
     } else {
-        result += input.substring(7).replace(reDot, '[.]');
+        result += input.substring(7).replace(reDot, '[.]').replace(reColon, '[:]');
     }
     return result;
 }
@@ -74,10 +79,10 @@ function helperHttps(input) {
     var result = "hxxps[://]"
     var endDomain = input.indexOf('/', 8)
     if (endDomain != -1) {
-        result += input.substring(8, endDomain).replace(reDot, '[.]')
+        result += input.substring(8, endDomain).replace(reDot, '[.]').replace(reColon, '[:]');
         result += input.substring(endDomain)
     } else {
-        result += input.substring(8).replace(reDot, '[.]')
+        result += input.substring(8).replace(reDot, '[.]').replace(reColon, '[:]');
     }
     return result
 }
@@ -91,10 +96,10 @@ function helperFtp(input) {
     var result = "fxp[://]";
     var endDomain = input.indexOf('/', 6);
     if (endDomain != -1) {
-        result += input.substring(6, endDomain).replace(reDot, '[.]');
+        result += input.substring(6, endDomain).replace(reDot, '[.]').replace(reColon, '[:]');
         result += input.substring(endDomain);
     } else {
-        result += input.substring(6).replace(reDot, '[.]');
+        result += input.substring(6).replace(reDot, '[.]').replace(reColon, '[:]');
     }
     return result;
 }
@@ -111,29 +116,29 @@ function helperNoProtocol(input) {
         result += "[://]";
         var endDomain = input.indexOf('/', 3);
         if (endDomain != -1) {
-            result += input.substring(3, endDomain).replace(reDot, '[.]');
+            result += input.substring(3, endDomain).replace(reDot, '[.]').replace(reColon, '[:]');
             result += input.substring(endDomain);
         } else {
-            result += input.substring(3).replace(reDot, '[.]');
+            result += input.substring(3).replace(reDot, '[.]').replace(reColon, '[:]');
         }
 
     } else if (input.substring(0, 2) == "//") {
         result += "[//]";
         var endDomain = input.indexOf('/', 2);
         if (endDomain != -1) {
-            result += input.substring(2, endDomain).replace(reDot, '[.]');
+            result += input.substring(2, endDomain).replace(reDot, '[.]').replace(reColon, '[:]');
             result += input.substring(endDomain);
         } else {
-            result += input.substring(2).replace(reDot, '[.]');
+            result += input.substring(2).replace(reDot, '[.]').replace(reColon, '[:]');
         }
 
     } else {
         var endDomain = input.indexOf('/', 0);
         if (endDomain != -1) {
-            result += input.substring(0, endDomain).replace(reDot, '[.]');
+            result += input.substring(0, endDomain).replace(reDot, '[.]').replace(reColon, '[:]');
             result += input.substring(endDomain);
         } else {
-            result += input.replace(reDot, '[.]');
+            result += input.replace(reDot, '[.]').replace(reColon, '[:]');
         }
     }
 
@@ -146,5 +151,28 @@ function helperNoProtocol(input) {
  * @return {string} The input ip defanged.
  */
 exports.defangIp = function (input) {
-    return input.replace(reDot, '[.]');
+    var result = "";
+
+    /*
+
+    if :: in ip:
+        surely ipv6 -> replace(::, [::]) and replace (:, [:])
+
+    else:
+        replace(., [.]) and replace(:, [:])
+
+    */
+
+    var doubleColonIndex = input.indexOf("::", 0);
+
+    if (doubleColonIndex != -1) {
+        // SHORT IPV6
+        result += input.substring(0, doubleColonIndex).replace(reColon, '[:]');
+        result += "[::]"
+        result += input.substring(doubleColonIndex + 2).replace(reColon, '[:]');
+    } else {
+        result += input.replace(reDot, '[.]').replace(reColon, '[:]');
+    }
+
+    return result;
 }
