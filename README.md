@@ -2,12 +2,12 @@
   <b>defangjs</b>
 </h1>
 <p align="center">
-  <b>URL/IP defanging with Javascript</b>
-</p>
-<p align="center">
-  <sub>
-    Coded with 💙 by edoardottt
-  </sub>
+  <b>URL/IP defanging with Javascript</b><br>
+  <a href="https://www.npmjs.com/package/defangjs"><img src="https://github.com/edoardottt/images/blob/main/defangjs/npm.svg"></a>
+  <a href="https://www.npmjs.com/package/defangjs"><img src="https://github.com/edoardottt/images/blob/main/defangjs/ipv6.svg"></a>
+  <a href="https://github.com/edoardottt/defangjs/blob/main/LICENSE"><img src="https://github.com/edoardottt/images/blob/main/defangjs/license.svg"></a>
+  <a href="https://www.npmjs.com/package/defangjs"><img src="https://github.com/edoardottt/images/blob/main/defangjs/dependencies.svg"></a>
+  <br><sub>Coded with 💙 by edoardottt</sub>
 </p>
 
   
