@@ -13,10 +13,14 @@
   "keywords": [
     "url",
     "ip",
+    "phishing",
     "defang",
     "defanging",
     "url-defang",
-    "security"
+    "security",
+    "email",
+    "web-security",
+    "email-security"
   ],
   "author": "edoardottt",
   "license": "GPL-3.0",
