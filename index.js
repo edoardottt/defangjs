@@ -1,10 +1,12 @@
 /*
 
-defangjs v1.0.2
+defangjs v1.0.3
 
 @Repository: https://github.com/edoardottt/defangjs
 
 @Author: edoardottt, https://www.edoardoottavianelli.it
+
+@License: https://github.com/edoardottt/defangjs/blob/main/LICENSE
 
 */
 
