@@ -13,41 +13,41 @@ npm test OR node test.js
 var defangjs = require('./index.js');
 
 
-console.log("[ HTTPS:// ]:      " + defangjs.defangUrl("https://github.com/edoardottt/defangjs") + "\n")
+console.log("[ HTTPS:// ]:      " + defangjs.defangUrl("https://github.com/edoardottt/defangjs") + "\n");
 
-console.log("[ HTTPS:// ]:      " + defangjs.defangUrl("https://www.edoardoottavianelli.it") + "\n")
+console.log("[ HTTPS:// ]:      " + defangjs.defangUrl("https://www.edoardoottavianelli.it") + "\n");
 
-console.log("[ HTTPS:// ]:      " + defangjs.defangUrl("https://very.bad.url.com:666/") + "\n")
+console.log("[ HTTPS:// ]:      " + defangjs.defangUrl("https://very.bad.url.com:666/") + "\n");
 
-console.log("[ HTTP:// ]:       " + defangjs.defangUrl("http://github.com/edoardottt/defangjs") + "\n")
+console.log("[ HTTP:// ]:       " + defangjs.defangUrl("http://github.com/edoardottt/defangjs") + "\n");
 
-console.log("[ HTTP:// ]:       " + defangjs.defangUrl("http://www.edoardoottavianelli.it") + "\n")
+console.log("[ HTTP:// ]:       " + defangjs.defangUrl("http://www.edoardoottavianelli.it") + "\n");
 
-console.log("[ HTTP:// ]:       " + defangjs.defangUrl("http://very.bad.url.com:666/") + "\n")
+console.log("[ HTTP:// ]:       " + defangjs.defangUrl("http://very.bad.url.com:666/") + "\n");
 
-console.log("[ FTP:// ]:        " + defangjs.defangUrl("ftp://github.com/edoardottt/defangjs") + "\n")
+console.log("[ FTP:// ]:        " + defangjs.defangUrl("ftp://github.com/edoardottt/defangjs") + "\n");
 
-console.log("[ FTP:// ]:        " + defangjs.defangUrl("ftp://www.edoardoottavianelli.it") + "\n")
+console.log("[ FTP:// ]:        " + defangjs.defangUrl("ftp://www.edoardoottavianelli.it") + "\n");
 
-console.log("[ FTP:// ]:        " + defangjs.defangUrl("ftp://very.bad.url.com:666/") + "\n")
+console.log("[ FTP:// ]:        " + defangjs.defangUrl("ftp://very.bad.url.com:666/") + "\n");
 
-console.log("[ :// ]:           " + defangjs.defangUrl("://github.com/edoardottt/defangjs") + "\n")
+console.log("[ :// ]:           " + defangjs.defangUrl("://github.com/edoardottt/defangjs") + "\n");
 
-console.log("[ :// ]:           " + defangjs.defangUrl("://www.edoardoottavianelli.it") + "\n")
+console.log("[ :// ]:           " + defangjs.defangUrl("://www.edoardoottavianelli.it") + "\n");
 
-console.log("[ :// ]:           " + defangjs.defangUrl("://very.bad.url.com:666/") + "\n")
+console.log("[ :// ]:           " + defangjs.defangUrl("://very.bad.url.com:666/") + "\n");
 
-console.log("[ // ]:            " + defangjs.defangUrl("//github.com/edoardottt/defangjs") + "\n")
+console.log("[ // ]:            " + defangjs.defangUrl("//github.com/edoardottt/defangjs") + "\n");
 
-console.log("[ // ]:            " + defangjs.defangUrl("//www.edoardoottavianelli.it") + "\n")
+console.log("[ // ]:            " + defangjs.defangUrl("//www.edoardoottavianelli.it") + "\n");
 
-console.log("[ // ]:            " + defangjs.defangUrl("//very.bad.url.com:666/") + "\n")
+console.log("[ // ]:            " + defangjs.defangUrl("//very.bad.url.com:666/") + "\n");
 
-console.log("[ NO PROTOCOL ]:   " + defangjs.defangUrl("github.com/edoardottt/defangjs") + "\n")
+console.log("[ NO PROTOCOL ]:   " + defangjs.defangUrl("github.com/edoardottt/defangjs") + "\n");
 
-console.log("[ NO PROTOCOL ]:   " + defangjs.defangUrl("www.edoardoottavianelli.it") + "\n")
+console.log("[ NO PROTOCOL ]:   " + defangjs.defangUrl("www.edoardoottavianelli.it") + "\n");
 
-console.log("[ NOT PROTOCOL ]:  " + defangjs.defangUrl("very.bad.url.com:666/") + "\n")
+console.log("[ NOT PROTOCOL ]:  " + defangjs.defangUrl("very.bad.url.com:666/") + "\n");
 
 console.log("[ IPv4 ]:          " + defangjs.defangIp("8.8.8.8") + "\n");
 
