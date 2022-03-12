@@ -47,7 +47,7 @@ console.log("[ NO PROTOCOL ]:   " + defangjs.defangUrl("github.com/edoardottt/de
 
 console.log("[ NO PROTOCOL ]:   " + defangjs.defangUrl("www.edoardoottavianelli.it") + "\n");
 
-console.log("[ NOT PROTOCOL ]:  " + defangjs.defangUrl("very.bad.url.com:666/") + "\n");
+console.log("[ NO PROTOCOL ]:   " + defangjs.defangUrl("very.bad.url.com:666/") + "\n");
 
 console.log("[ IPv4 ]:          " + defangjs.defangIp("8.8.8.8") + "\n");
 
