@@ -6,6 +6,8 @@ defangjs v1.0.2
 
 @Author: edoardottt, https://www.edoardoottavianelli.it
 
+@License: https://github.com/edoardottt/defangjs/blob/main/LICENSE
+
 */
 
 //Regular expression (global) matching a dot.

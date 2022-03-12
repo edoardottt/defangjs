@@ -6,6 +6,8 @@ defangjs v1.0.2
 
 @Author: edoardottt, https://www.edoardoottavianelli.it
 
+@License: https://github.com/edoardottt/defangjs/blob/main/LICENSE
+
 npm test OR node test.js
 
 */
