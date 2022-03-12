@@ -1,6 +1,6 @@
 /*
 
-defangjs v1.0.2
+defangjs v1.0.3
 
 @Repository: https://github.com/edoardottt/defangjs
 
