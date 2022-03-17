@@ -1,7 +1,7 @@
 {
 	"name": "defangjs",
-	"version": "1.0.3",
-	"description": "URL/IP defanging with Javascript",
+	"version": "1.0.4",
+	"description": "URL/IP/Email defanging with Javascript",
 	"main": "index.js",
 	"scripts": {
 		"test": "node test.js"
@@ -20,7 +20,10 @@
 		"security",
 		"email",
 		"web-security",
-		"email-security"
+		"email-security",
+		"cti",
+		"ioc",
+		"malware"
 	],
 	"author": "edoardottt",
 	"license": "GPL-3.0",

@@ -1,6 +1,6 @@
 /*
 
-defangjs v1.0.3
+defangjs v1.0.4
 
 @Repository: https://github.com/edoardottt/defangjs
 
@@ -167,4 +167,13 @@ exports.defangIp = function (input) {
 	}
 
 	return result;
+}
+
+/*
+* Defang an email address.
+* @param  {string} input: The email you want to defang.
+* @return {string} The input email defanged.
+*/
+exports.defangEmail = function (input) {
+	return input.replace(reDot, '[.]').replace(reColon, '[:]');
 }

@@ -1,6 +1,6 @@
 /*
 
-defangjs v1.0.3
+defangjs v1.0.4
 
 @Repository: https://github.com/edoardottt/defangjs
 
@@ -66,3 +66,7 @@ console.log("[ SHORT IPv6 ]:    " + defangjs.defangIp("2001:0db8:85a3::8a2e:0370
 console.log("[ IPv6 ]:          " + defangjs.defangIp("[2001:0db8:85a3:0000:0000:8a2e:0370:7334]:8080") + "\n");
 
 console.log("[ SHORT IPv6 ]:    " + defangjs.defangIp("[2001:0db8:85a3::8a2e:0370:7334]:8080") + "\n");
+
+console.log("[ EMAIL ]:         " + defangjs.defangEmail("edoardott@gmail.com") + "\n");
+
+console.log("[ EMAIL ]:         " + defangjs.defangEmail("mailto:edoardott@gmail.com") + "\n");
