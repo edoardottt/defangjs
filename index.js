@@ -170,7 +170,7 @@ exports.defangIp = function (input) {
 }
 
 /*
-* Defang an email.
+* Defang an email address.
 * @param  {string} input: The email you want to defang.
 * @return {string} The input email defanged.
 */
