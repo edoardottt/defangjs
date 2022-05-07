@@ -9,8 +9,8 @@
   <br>
   <a href="https://github.com/edoardottt/defangjs/blob/main/LICENSE"><img src="https://github.com/edoardottt/images/blob/main/defangjs/license.svg"></a>
   <a href="https://runkit.com/edoardottt/runkit-npm-defangjs"><img src="https://github.com/edoardottt/images/blob/main/defangjs/runkit.svg"></a>
-
-  <br><sub>Coded with 💙 by edoardottt</sub>
+<br>
+  <sub>Coded with 💙 by edoardottt</sub>
 </p>
 
 Defanging is a process where URLs, IPs, and email addresses no longer become effective (or clickable if you want). Why? Links can be used for phishing or it's simply safer to display them in a weakened way if they are malicious resources (eg. Indicators of compromise for a malware).
