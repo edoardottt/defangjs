@@ -1,6 +1,6 @@
 {
 	"name": "defangjs",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "URL/IP/Email defanging with Javascript",
 	"main": "index.js",
 	"scripts": {
