@@ -52,10 +52,13 @@ Test 🧑‍🏭
 npm test
 ```
 
-Contribute 🤝
+Changelog 📌
 -------
-Open an [issue](https://github.com/edoardottt/defangjs/issues).
+Detailed changes for each release are documented in the [release notes](https://github.com/edoardottt/defangjs/releases).
 
+Contributing 🤝
+------
+If you want to contribute to this project, you can start opening an [issue](https://github.com/edoardottt/defangjs/issues).
 
 License 📝
 -------
