@@ -13,7 +13,7 @@
   <sub>Coded with 💙 by edoardottt</sub>
 </p>
 
-Defanging is a process where URLs, IPs, and email addresses no longer become effective (or clickable if you want). Why? Links can be used for phishing or it's simply safer to display them in a weakened way if they are malicious resources (eg. Indicators of compromise for a malware).
+Defanging is the process where URLs, IPs, and email addresses no longer become effective (or clickable if you want). Why? Links can be used for phishing or it's simply safer to display them in a weakened way if they are malicious resources (eg. Indicators of compromise for a malware).
 
 - [Blocking Email Links: Why we use HXXP in emails](https://privacymatters.ubc.ca/blocking-email-links-why-we-use-hxxp-emails)
 - [Email Security – Defanging URLs](https://www.ibm.com/docs/en/sqsp/32.0?topic=SSBRUQ_32.0.0/com.ibm.resilient.doc/install/resilient_install_defangURLs.htm)
