@@ -8,7 +8,7 @@
   <a href="https://www.npmjs.com/package/defangjs"><img src="https://github.com/edoardottt/images/blob/main/defangjs/dependencies.svg"></a>
   <br>
   <a href="https://github.com/edoardottt/defangjs/blob/main/LICENSE"><img src="https://github.com/edoardottt/images/blob/main/defangjs/license.svg"></a>
-  <a href="https://runkit.com/edoardottt/runkit-npm-defangjs"><img src="https://github.com/edoardottt/images/blob/main/defangjs/runkit.svg"></a>
+  <a href="https://runkit.com/edoardottt/runkit-npm-defangjs/v1.0.6"><img src="https://github.com/edoardottt/images/blob/main/defangjs/runkit.svg"></a>
 <br>
   <sub>Coded with 💙 by edoardottt</sub>
 </p>
@@ -34,12 +34,12 @@ var defangjs = require('defangjs');
 
 var url = 'https://www.edoardoottavianelli.it/index.html';
 
-console.log(defangjs.defangUrl(url)); 
+console.log(defangjs.Url(url)); 
 // --> hxxps[://]www[.]edoardoottavianelli[.]it/index.html
 
 var maliciousIp = '666.666.666.666';
 
-console.log(defangjs.defangIp(maliciousIp)); 
+console.log(defangjs.Ip(maliciousIp)); 
 // --> 666[.]666[.]666[.]666
 ```
 

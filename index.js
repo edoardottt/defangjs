@@ -1,6 +1,6 @@
 /*
 
-defangjs v1.0.4
+defangjs v1.0.6
 
 @Repository: https://github.com/edoardottt/defangjs
 
@@ -28,7 +28,7 @@ const reDoubleColon = /\:\:/g;
 * @param  {string} input: The url you want to defang.
 * @return {string} The input url defanged.
 */
-exports.defangUrl = function (input) {
+exports.Url = function (input) {
 	var result = "";
 
 	// - http://   -->   hxxp[://]
@@ -153,7 +153,7 @@ function helperNoProtocol(input) {
 * @param  {string} input: The ip you want to defang.
 * @return {string} The input ip defanged.
 */
-exports.defangIp = function (input) {
+exports.Ip = function (input) {
 	var result = "";
 	var doubleColonIndex = input.indexOf("::", 0);
 
@@ -174,6 +174,6 @@ exports.defangIp = function (input) {
 * @param  {string} input: The email you want to defang.
 * @return {string} The input email defanged.
 */
-exports.defangEmail = function (input) {
+exports.Email = function (input) {
 	return input.replace(reDot, '[.]').replace(reColon, '[:]');
 }
