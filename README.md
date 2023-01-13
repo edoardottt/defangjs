@@ -2,7 +2,7 @@
   <b>defangjs</b>
 </h1>
 <p align="center">
-  <b>URL/IP/Email defanging with Javascript</b><br>
+  <b>URL / IP / Email defanging with Javascript</b><br>
   <a href="https://www.npmjs.com/package/defangjs"><img src="https://github.com/edoardottt/images/blob/main/defangjs/npm.svg"></a>
   <a href="https://www.npmjs.com/package/defangjs"><img src="https://github.com/edoardottt/images/blob/main/defangjs/ipv6.svg"></a>
   <a href="https://www.npmjs.com/package/defangjs"><img src="https://github.com/edoardottt/images/blob/main/defangjs/dependencies.svg"></a>
