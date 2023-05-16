@@ -49,14 +49,14 @@ console.log(defangjs.Email(maliciousEmail));
 // --> mailto[:]edoardott@gmail[.]com
 ```
 
-Take a look to [test.js](https://github.com/edoardottt/defangjs/blob/main/test.js), this file contains all the supported formats (various protocols, ports, Ipv4 and Ipv6...)
-
 Test 🧑‍🏭
 -------
 
 ```bash
 npm test
 ```
+
+Take a look to [test.js](https://github.com/edoardottt/defangjs/blob/main/test.js), this file contains all the supported formats (URLs, various protocols, ports, Ipv4 and Ipv6 and email addresses)
 
 Changelog 📌
 -------
