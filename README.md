@@ -33,14 +33,20 @@ Usage 🚀
 var defangjs = require('defangjs');
 
 var url = 'https://www.edoardoottavianelli.it/index.html';
-
 console.log(defangjs.Url(url)); 
 // --> hxxps[://]www[.]edoardoottavianelli[.]it/index.html
 
-var maliciousIp = '666.666.666.666';
-
-console.log(defangjs.Ip(maliciousIp)); 
+var maliciousIpv4 = '666.666.666.666';
+console.log(defangjs.Ip(maliciousIpv4)); 
 // --> 666[.]666[.]666[.]666
+
+var maliciousIpv6 = '2001:0db8:85a3:0000:0000:8a2e:0370:7334';
+console.log(defangjs.Ip(maliciousIpv6));
+// --> 2001[:]0db8[:]85a3[:]0000[:]0000[:]8a2e[:]0370[:]7334
+
+var maliciousEmail = 'mailto:edoardott@gmail.com';
+console.log(defangjs.Email(maliciousEmail));
+// --> mailto[:]edoardott@gmail[.]com
 ```
 
 Take a look to [test.js](https://github.com/edoardottt/defangjs/blob/main/test.js), this file contains all the supported formats (various protocols, ports, Ipv4 and Ipv6...)
