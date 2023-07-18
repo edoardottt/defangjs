@@ -18,11 +18,10 @@ Defanging is the process where URLs, IPs, and email addresses no longer become e
 - [Blocking Email Links: Why we use HXXP in emails](https://privacymatters.ubc.ca/blocking-email-links-why-we-use-hxxp-emails)
 - [Email Security – Defanging URLs](https://www.ibm.com/docs/en/sqsp/32.0?topic=SSBRUQ_32.0.0/com.ibm.resilient.doc/install/resilient_install_defangURLs.htm)
 
-
 Install ⬇️
 ------
 
-```bash
+```console
 npm install defangjs@latest
 ```
 
@@ -52,7 +51,7 @@ console.log(defangjs.Email(maliciousEmail));
 Test 🧑‍🏭
 -------
 
-```bash
+```console
 npm test
 ```
 
@@ -60,10 +59,12 @@ Take a look to [test.js](https://github.com/edoardottt/defangjs/blob/main/test.j
 
 Changelog 📌
 -------
+
 Detailed changes for each release are documented in the [release notes](https://github.com/edoardottt/defangjs/releases).
 
 Contributing 🤝
 ------
+
 If you want to contribute to this project, you can start opening an [issue](https://github.com/edoardottt/defangjs/issues).
 
 License 📝
