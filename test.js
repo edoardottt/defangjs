@@ -1,6 +1,6 @@
 /*
 
-defangjs v1.0.6
+defangjs v1.0.7
 
 @Repository: https://github.com/edoardottt/defangjs
 
@@ -32,6 +32,8 @@ console.log("[ FTP:// ]:        " + defangjs.Url("ftp://github.com/edoardottt/de
 console.log("[ FTP:// ]:        " + defangjs.Url("ftp://www.edoardoottavianelli.it") + "\n");
 
 console.log("[ FTP:// ]:        " + defangjs.Url("ftp://very.bad.url.com:666/") + "\n");
+
+console.log("[ FILE:// ]:       " + defangjs.Url("file:///etc/hosts") + "\n");
 
 console.log("[ :// ]:           " + defangjs.Url("://github.com/edoardottt/defangjs") + "\n");
 
