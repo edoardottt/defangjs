@@ -4,7 +4,7 @@ defangjs v1.0.7
 
 @Repository: https://github.com/edoardottt/defangjs
 
-@Author: edoardottt, https://www.edoardoottavianelli.it
+@Author: edoardottt, https://edoardottt.com
 
 @License: https://github.com/edoardottt/defangjs/blob/main/LICENSE
 
