@@ -33,7 +33,7 @@ var defangjs = require('defangjs');
 
 var url = 'https://edoardottt.com/index.html';
 console.log(defangjs.Url(url)); 
-// hxxps[://]www[.]edoardoottavianelli[.]it/index.html
+// hxxps[://]edoardottt[.]com/index.html
 
 var maliciousIpv4 = '666.666.666.666';
 console.log(defangjs.Ip(maliciousIpv4)); 
